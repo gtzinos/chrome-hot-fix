@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome hot fix",
+    "description": "Chromium hot fix",
+    "version": "0.0.0.1",
+    "content_security_policy": {
+      "extension_pages": "default-src 'self';"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["content-script.js"]
+      }
+    ]
+   }
+
+   
