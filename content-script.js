@@ -27,7 +27,7 @@ setTimeout(() => {
         const observer = new MutationObserver(callback);
     
         const targetNode = document.getElementsByTagName("html")?.[0];
-        const config = { attributes: true, childList: true, subtree: true };
+        const config = { attributes: false, childList: true, subtree: true };
     
         // Start observing the target node for configured mutations
         observer.observe(targetNode, config);
